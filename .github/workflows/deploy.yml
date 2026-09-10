@@ -1,0 +1,70 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Guard against oversized files
+        run: |
+          fail=0
+          while IFS= read -r -d '' f; do
+            size=$(stat -c%s "$f")
+            if [ "$size" -gt 104857600 ]; then
+              echo "::error file=$f::$f is $((size/1048576))MB, over GitHub's 100MB limit"
+              fail=1
+            fi
+          done < <(find . -path ./.git -prune -o -type f -print0)
+          total=$(du -sm --exclude=.git . | cut -f1)
+          echo "Site size: ${total}MB"
+          if [ "$total" -gt 1024 ]; then
+            echo "::error::Site is ${total}MB, over the 1GB GitHub Pages limit"
+            fail=1
+          fi
+          exit $fail
+
+      - name: Check HTML links and assets
+        run: python3 .github/scripts/check_links.py
+
+      - name: Stage artifact
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='_site' ./ _site/
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
