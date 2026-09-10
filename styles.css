@@ -902,3 +902,8 @@ body[data-page="home"] .home-cases .case-study-tabs img {
   .reveal { opacity: 1; transform: none; }
   .logo-marquee__track { animation: none; }
 }
+
+/* Original flooring proof, using the consolidated card treatment. */
+.review-proof-media { aspect-ratio:16/10; overflow:hidden; background:#000; }
+.review-proof-media img, .review-proof-media video, .review-proof-media picture { display:block; width:100%; height:100%; object-fit:cover; }
+.review-proof-media video { object-fit:contain; }

@@ -1200,6 +1200,129 @@
     }
   };
 
+  // Mirrored from the revised individual projector mockup.
+  var reviewedProjectorCopy = {
+  "delta-fieldlas": {
+    "description": "The Delta FieldLAS is a high-performance industrial laser system that creates bright, highly visible floor lines without the ongoing maintenance of traditional paint or floor tape. Featuring the latest diode laser technology, it projects crisp, adjustable lines over long distances.",
+    "descriptionSecondary": "Built for dusty, dirty or wet environments where typical floor markings quickly deteriorate. With an IP67-rated enclosure, 360° adjustable mounting and intelligent heating control, it is made to keep performing where the floor itself is the problem.",
+    "features": [
+      [
+        "Latest diode laser technology",
+        "Brighter, sharper and more consistent line projection."
+      ],
+      [
+        "Adjustable projection",
+        "Update the line length and thickness to suit changing site requirements."
+      ],
+      [
+        "Long-lasting laser source",
+        "A durable diode source designed for improved reliability."
+      ],
+      [
+        "IP67-rated enclosure",
+        "Built for dusty, dirty and wet industrial environments."
+      ],
+      [
+        "Quick installation",
+        "Minimal downtime during installation, with no curing time."
+      ],
+      [
+        "360° adjustable mounting",
+        "Reposition the projected line with precision as the layout evolves."
+      ]
+    ],
+    "notes": [
+      "Not suitable for applications in full sunlight",
+      "Hard wiring must be completed by a qualified electrician",
+      "Technical data sheet available on request"
+    ],
+    "applications": "Pedestrian walkways and forklift traffic separation · Dusty, dirty or wet environments · Cold storage and freezer facilities · High-risk industrial work areas",
+    "featuresTitle": "A line that never<br>touches the floor.",
+    "featuresIntro": "Nothing is applied to the concrete, so nothing wears, chips or fades. Every application is customised to suit the environment, so contact us before purchase to plan the projector, line position and installation."
+  },
+  "signum-75w": {
+    "description": "The Italian-made Signum 75W is a smart alternative to traditional floor markings, projecting bright, highly visible safety lines and warning signs without the ongoing maintenance. It eliminates the need for constant remarking by displaying permanent visual guidance that will not wear away under forklift traffic, pallets or daily operations.",
+    "descriptionSecondary": "It projects onto any surface and will not wear out, so rough, worn and dirty floors stop being the limiting factor. IP65 rated for harsh industrial environments, suitable for high and low temperature applications, and easy to reposition or update as layouts change.",
+    "features": [
+      [
+        "Easy to reposition or update",
+        "Move or update the projection when your site layout changes."
+      ],
+      [
+        "Customised signs and symbols",
+        "Choose safety content designed around your workplace requirements."
+      ],
+      [
+        "Projects onto any surface",
+        "Visible guidance that will not wear under daily operations."
+      ],
+      [
+        "50,000-hour LED lifespan",
+        "Long service life, with reduced output beyond the rated period."
+      ],
+      [
+        "IP65 protection",
+        "Designed for harsh industrial environments and temperature extremes."
+      ],
+      [
+        "Two-year warranty",
+        "Long-term support for the projector system."
+      ]
+    ],
+    "notes": [
+      "Not suitable for applications in full sunlight",
+      "Hard wiring must be completed by a qualified electrician",
+      "Every projection system is customised for the workplace",
+      "Technical data sheet available on request"
+    ],
+    "applications": "Sites where layouts may change over time · Warehouses with heavy forklift traffic · Dusty, dirty or high-wear environments · High-risk areas with forklift and pedestrian traffic",
+    "featuresTitle": "Bright on floors<br>that ruin markings.",
+    "featuresIntro": "Projected markings stay visible regardless of floor cleanliness. We customise every projection system for the workplace layout and application, so contact us before purchase to plan the sign, mounting position and installation."
+  },
+  "signum-50w": {
+    "description": "The Italian-made Signum 50W is a smart alternative to traditional floor markings, projecting bright, highly visible safety lines and warning signs without the ongoing maintenance. It eliminates the need for constant remarking by displaying permanent visual guidance that will not wear away under forklift traffic, pallets or daily operations.",
+    "descriptionSecondary": "It projects onto any surface and will not wear out, so rough, worn and dirty floors stop being the limiting factor. IP65 rated for harsh industrial environments, suitable for high and low temperature applications, and easy to reposition or update as layouts change.",
+    "features": [
+      [
+        "Easy to reposition or update",
+        "Move or update the projection when your site layout changes."
+      ],
+      [
+        "Customised signs and symbols",
+        "Choose safety content designed around your workplace requirements."
+      ],
+      [
+        "Projects onto any surface",
+        "Visible guidance that will not wear under daily operations."
+      ],
+      [
+        "50,000-hour LED lifespan",
+        "Long service life, with reduced output beyond the rated period."
+      ],
+      [
+        "IP65 protection",
+        "Designed for harsh industrial environments and temperature extremes."
+      ],
+      [
+        "Two-year warranty",
+        "Long-term support for the projector system."
+      ]
+    ],
+    "notes": [
+      "Not suitable for applications in full sunlight",
+      "Hard wiring must be completed by a qualified electrician",
+      "Every projection system is customised for the workplace",
+      "Technical data sheet available on request"
+    ],
+    "applications": "Sites where layouts may change over time · Warehouses with heavy forklift traffic · Dusty, dirty or high-wear environments · High-risk areas with forklift and pedestrian traffic",
+    "featuresTitle": "Bright on floors<br>that ruin markings.",
+    "featuresIntro": "Projected markings stay visible regardless of floor cleanliness. We customise every projection system for the workplace layout and application, so contact us before purchase to plan the sign, mounting position and installation."
+  }
+};
+  Object.keys(reviewedProjectorCopy).forEach(function (key) {
+    Object.assign(projectorProducts[key], reviewedProjectorCopy[key]);
+  });
+
   var projectorPhotos = [
     ['assets/media/costco-signum-line-marking-projectors-installed-2.jpg', 'Costco projected warning'],
     ['assets/media/costco-signum-line-marking-projectors-installed-3.jpg', 'Costco projected marking'],
@@ -1232,11 +1355,11 @@
     projectorMount.innerHTML = [
       '<section class="product-hero"><div class="shell"><div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><a href="projectors.html">Projectors</a><span>/</span><span>' + product.name + '</span></div><div class="product-layout">',
       '<div class="product-gallery reveal"><img src="' + product.image + '" alt="' + product.alt + '"></div>',
-      '<div class="product-summary reveal"><p class="eyebrow">' + product.eyebrow + '</p><h1>' + product.title + '</h1><p class="lede">' + product.description + '</p><div class="spec-strip">' + product.specs.map(function (item) { return '<div><span>' + item[0] + '</span><strong>' + item[1] + '</strong></div>'; }).join('') + '</div><div class="price"><strong>' + product.price + '</strong><span>+ GST</span></div><div class="actions"><button class="btn btn--red btn--large" type="button" data-add-cart>Add to cart</button><a class="btn btn--large" href="quote.html">Book a Demonstration</a></div><p class="form-status" data-cart-status aria-live="polite"></p><a class="btn brochure-button" href="' + product.brochure + '" target="_blank" rel="noopener">Download Brochure</a></div>',
+      '<div class="product-summary reveal"><p class="eyebrow">' + product.eyebrow + '</p><h1>' + product.title + '</h1><p class="lede">' + product.description + '</p><p>' + product.descriptionSecondary + '</p><div class="spec-strip">' + product.specs.map(function (item) { return '<div><span>' + item[0] + '</span><strong>' + item[1] + '</strong></div>'; }).join('') + '</div><div class="price"><strong>' + product.price + '</strong><span>+ GST</span></div><div class="actions"><button class="btn btn--red btn--large" type="button" data-add-cart>Add to cart</button><a class="btn btn--large" href="quote.html">Book a Demonstration</a></div><p class="form-status" data-cart-status aria-live="polite"></p><a class="btn brochure-button" href="' + product.brochure + '" target="_blank" rel="noopener">Download Brochure</a></div>',
       '</div></div></section>',
-      '<section class="section" id="features"><div class="shell"><div class="section-head"><div><p class="eyebrow">Features</p><h2>Built for the<br>working floor.</h2></div><p>Every application is configured for the mounting position and ambient light.</p></div><div class="card-grid">' + product.features.map(function (item, index) { return '<article class="info-card"><p class="mono">0' + (index + 1) + '</p><h3>' + item[0] + '</h3><p>' + item[1] + '</p></article>'; }).join('') + '</div></div></section>',
+      '<section class="section" id="features"><div class="shell"><div class="section-head"><div><p class="eyebrow">Features</p><h2>' + product.featuresTitle + '</h2></div><p>' + product.featuresIntro + '</p></div><div class="card-grid">' + product.features.map(function (item, index) { return '<article class="info-card"><p class="mono">0' + (index + 1) + '</p><h3>' + item[0] + '</h3><p>' + item[1] + '</p></article>'; }).join('') + '</div></div></section>',
       '<section class="section section--black" id="specs"><div class="shell"><div class="section-head"><div><p class="eyebrow">Installation</p><h2>The details<br>that matter.</h2></div><p>' + product.applications + '</p></div><table class="spec-table">' + product.notes.map(function (item, index) { return '<tr><th>0' + (index + 1) + '</th><td>' + item + '</td></tr>'; }).join('') + '</table></div></section>',
-      '<section class="sample-band"><div class="shell sample-band__inner"><div><p class="eyebrow">Other line marking options</p><h2>Line marking tape and paint solutions.</h2><p>Compare tape and painted markings for your surface and traffic.</p></div><a class="btn btn--red" href="line-marking.html">See our line marking solutions</a></div></section>',
+      '<section class="sample-band"><div class="shell sample-band__inner"><div><p class="eyebrow">Other line marking options</p><h2>Line marking tape and paint solutions.</h2><p>A projector is the right call where the floor itself is the problem. Where it is not, a laid or painted line is usually cheaper and faster. We supply and install both, so we will tell you which one your site actually needs.</p></div><a class="btn btn--red" href="line-marking.html">See our line marking solutions</a></div></section>',
       projectorCarousel(),
       '<section class="section section--black" id="related-products"><div class="shell"><div class="section-head"><div><p class="eyebrow">Related products</p><h2>Compare the range.</h2></div><p>See the other Cotewell projector options.</p></div><div class="product-grid projector-related-grid">' + projectorRelated(key) + '</div></div></section>',
       '<section class="sample-band"><div class="shell sample-band__inner"><div><p class="eyebrow">Free on-site demonstration</p><h2>See it on your floor first.</h2><p>We confirm the projector, mounting position and light conditions before you order.</p></div><div class="actions"><a class="btn btn--red btn--large" href="quote.html">Book a Demonstration</a><a class="btn btn--dark btn--large" href="tel:1300590505">Call 1300 590 505</a></div></div></section>'
@@ -1473,3 +1596,14 @@
     else element.classList.add('is-visible');
   });
 }());
+
+/* Keep a usable route to testimonials when the remote embed is unavailable. */
+document.querySelectorAll('video[aria-label="Cabinet Connections video testimonial"]').forEach(function(video) {
+  video.addEventListener('error', function() {
+    video.controls = false;
+    var message = document.createElement('p');
+    message.textContent = 'This video is currently unavailable here. Use See all testimonials below.';
+    message.style.cssText = 'padding:12px;margin:0;background:#000;color:#fff;font-size:14px';
+    video.parentNode.appendChild(message);
+  }, {once:true});
+});
