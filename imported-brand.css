@@ -1,0 +1,65 @@
+/* Consolidated brand, applied to the duplicated original layouts only. */
+.original-mockup {
+  --black:#000; --ink:#000; --soft-ink:#111; --paper:#fff; --white:#fff;
+  --red:#a6192e !important; --signal:#a6192e !important; --signal-bright:#a6192e !important;
+  --shell:1760px !important; --gutter:clamp(20px,4vw,52px) !important;
+  --line-dark:rgba(0,0,0,.16); --line-light:rgba(255,255,255,.22);
+  --muted-dark:rgba(0,0,0,.72); --muted-light:rgba(255,255,255,.78);
+  display:block; background:#fff; color:#000; min-width:0;
+  font-family:"Helvetica Neue","Founders Grotesk",Arial,sans-serif !important;
+  font-size:16px; line-height:1.6;
+}
+.original-mockup *, .original-mockup input, .original-mockup select, .original-mockup textarea { font-family:"Helvetica Neue","Founders Grotesk",Arial,sans-serif !important; }
+.original-mockup .shell { width:min(calc(100% - var(--gutter) * 2),var(--shell)); }
+.original-mockup :is(h1,h2,h3,.eyebrow,.button) { font-family:"Big John","Founders Grotesk",sans-serif !important; font-weight:400 !important; letter-spacing:0 !important; }
+.original-mockup h1 { font-size:clamp(40px,4.6vw,88px) !important; line-height:1.12 !important; overflow-wrap:anywhere; }
+.original-mockup h2 { font-size:clamp(30px,2.5vw,48px) !important; line-height:1.18 !important; overflow-wrap:anywhere; }
+.original-mockup h3 { font-size:clamp(22px,1.5vw,28px) !important; line-height:1.25 !important; }
+.original-mockup p, .original-mockup li { font-size:16px; line-height:1.65; }
+.original-mockup .eyebrow { font-size:14px !important; line-height:1.5; }
+.original-mockup .eyebrow::before { display:none; }
+.original-mockup h1 { max-width:none !important; }
+.original-mockup .reveal.is-visible { opacity:1; filter:none; }
+.original-mockup .mono { font-family:"Helvetica Neue",Arial,sans-serif !important; letter-spacing:.06em; }
+.original-mockup :is(.category-hero,.product-hero,.hero,.section--ink,.sample-band,.sticky-cta) { background-color:#000; color:#fff; }
+.original-mockup :is(.section--paper,.features-wrap) { background-color:#fff; color:#000; }
+.original-mockup :is(.hero,.category-hero,.product-hero) h1 em { font-style:normal; color:#fff; }
+.original-mockup :is(.category-hero,.hero) { background-image:none; }
+.original-mockup :is(.category-hero__copy,.hero__copy) > p:not(.eyebrow) { font-size:20px; line-height:1.5; }
+.original-mockup .section { padding-block:clamp(60px,5.2vw,100px); }
+.original-mockup :is(.button,.text-link,.system-row__cta) { display:inline-flex; align-items:center; justify-content:center; gap:12px; border:1px solid currentColor; border-radius:0 !important; min-height:48px; padding:14px 20px; font-family:"Big John",sans-serif !important; font-size:13px !important; font-weight:400; line-height:1.4; text-decoration:none !important; text-align:center; max-width:100%; }
+.original-mockup .text-link::after { display:none; }
+.original-mockup :is(.button,.text-link,.system-row__cta):hover { background:#a6192e; border-color:#a6192e; color:#fff; }
+.original-mockup .button--red { background:#a6192e; border-color:#a6192e; color:#fff; }
+.original-mockup .button--outline { background:transparent; color:inherit; border-color:currentColor; }
+.original-mockup .benefit-card:nth-child(n) { --hover-colour:#a6192e; }
+.original-mockup .features-wrap .feature:nth-child(n) { border-top-color:#a6192e; }
+.original-mockup .features-wrap .feature:nth-child(n) > span { background:#a6192e; }
+.original-mockup .limitations ul { display:block; }
+.original-mockup .limitations li + li { margin-top:8px; }
+.original-mockup :is(.faq-item,.faq-list details) summary { font-family:"Big John",sans-serif !important; font-size:20px; line-height:1.4; }
+.original-mockup :is(.faq-item,.faq-list details)[open] summary { color:#a6192e; }
+.original-mockup .spec-strip { display:none !important; }
+.original-mockup .sticky-cta { border-top:1px solid rgba(255,255,255,.25); }
+.original-mockup .sticky-cta__inner { min-height:84px; }
+.original-mockup .product-media img, .original-mockup .category-card__media img, .original-mockup .related-product__media img { object-fit:contain; }
+.original-mockup .hero-video__frame { box-shadow:none !important; }
+.original-mockup .sticky-cta__prompt { font-size:14px; }
+.original-mockup .hero__resources a { display:inline-flex; padding:12px 16px; border:1px solid currentColor; text-decoration:none; font-size:13px; font-family:"Big John",sans-serif !important; }
+.original-mockup .hero-video__caption { margin-top:24px; }
+.original-mockup .quote-grid > *, .original-mockup .section-head > * { min-width:0; }
+.original-mockup .variant-gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(64px,1fr)); gap:8px; margin-top:16px; }
+.original-mockup .variant-gallery button { border:1px solid #777; padding:4px; background:#fff; cursor:pointer; }
+.original-mockup .variant-gallery img { width:100%; height:64px; object-fit:contain; }
+.original-mockup .variant-gallery button[aria-pressed="true"] { outline:2px solid #a6192e; }
+.original-mockup--projectors #related-videos .video-grid { align-items:stretch; grid-auto-rows:1fr; }
+.original-mockup--projectors #related-videos .video-card { height:100%; min-width:0; }
+.original-mockup--projectors #related-videos .video-card__media { flex:0 0 auto; }
+.original-mockup--projectors #related-videos .video-card__copy { flex:1; }
+@media(max-width:680px){
+  .original-mockup h1 { font-size:38px !important; }
+  .original-mockup h2 { font-size:30px !important; }
+  .original-mockup .sticky-cta__inner { gap:10px; }
+  .original-mockup .sticky-cta .button { padding:12px; font-size:11px !important; }
+  .original-mockup .limitations { grid-template-columns:1fr; }
+}

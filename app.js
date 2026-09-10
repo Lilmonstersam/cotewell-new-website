@@ -1377,6 +1377,7 @@
   }
 
   function refreshStickyCta() {
+    if (document.body.dataset.imported) return;
     var existing = document.querySelector('.sticky-cta');
     if (existing) existing.remove();
     var labels = {
