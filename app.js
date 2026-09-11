@@ -55,32 +55,16 @@
   }
 
   if (footerMount) {
-    var showCtaBand = (page !== 'quote' && page !== 'home' && page !== 'line');
-    var ctaBandHtml = showCtaBand ? [
-      '<section class="cta-band"><div class="shell cta-band__inner">',
-        '<h2>Tell us what your floor needs to do.</h2>',
-        '<a class="btn btn--dark btn--large" href="quote.html">Request a Quote <span aria-hidden="true">↗</span></a>',
-      '</div></section>'
-    ].join('') : '';
-
     footerMount.innerHTML = [
-      ctaBandHtml,
       '<footer class="site-footer">',
-        '<nav class="footer-services" aria-label="Services"><div class="shell footer-services__inner">',
-          '<a href="floor-coating.html">Floor Coating</a>',
-          '<a href="line-marking.html">Line Marking</a>',
-          '<a href="projectors.html">Projectors</a>',
-          '<a href="line-marking-tape.html">Line Marking Tape</a>',
-          '<a href="pricing.html">Pricing</a>',
-        '</div></nav>',
         '<div class="shell footer-main">',
           '<div class="footer-brand">',
             '<img src="assets/media/cotewell-logo.jpeg" alt="Cotewell">',
             '<p>Industrial floors, markings and visual safety systems across Australia.</p>',
           '</div>',
-          '<div class="footer-col"><h3>About Us</h3><a href="about.html#team">Our team</a><a href="about.html#approach">How we work</a><a href="quote.html">Request a Quote</a></div>',
+          '<div class="footer-col"><h3>Products &amp; Services</h3><a href="floor-coating.html">Floor Coating</a><a href="line-marking.html">Line Marking</a><a href="projectors.html">Projectors</a><a href="line-marking-tape.html">Line Marking Tape</a><a href="pricing.html">Pricing</a></div>',
           '<div class="footer-col"><h3>Learning Centre</h3><a href="learning.html#articles">Articles</a><a href="case-studies.html">Case studies</a><a href="video-gallery.html">Videos</a></div>',
-          '<div class="footer-col"><h3>Free Tape Samples</h3><a href="samples.html">Request samples</a><a href="tel:1300590505">1300 590 505</a><a href="mailto:enquiries@cotewell.com.au">Email us</a></div>',
+          '<div class="footer-col"><h3>Company</h3><a href="about.html">About Us</a><a href="samples.html">Free Tape Samples</a><a href="quote.html">Request a Quote</a><a href="tel:1300590505">1300 590 505</a><a href="mailto:enquiries@cotewell.com.au">enquiries@cotewell.com.au</a></div>',
         '</div>',
         '<div class="footer-bottom"><div class="shell footer-bottom__inner"><span>Copyright 2026 © Cotewell</span><span><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></span></div></div>',
       '</footer>'

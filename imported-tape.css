@@ -38,7 +38,7 @@ html {
   min-width: 320px;
   background: var(--ink);
   color: var(--white);
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -56,7 +56,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .mono {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -81,7 +81,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   background: var(--paper);
   color: #111;
   border-bottom: 1px solid var(--line-dark);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 10px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -184,7 +184,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   font-weight: 700;
 }
 .cart-link:hover { border-color: var(--white); }
-.cart-link b { min-width: 17px; height: 17px; display: grid; place-items: center; border-radius: 50%; background: var(--red); font-family: "IBM Plex Mono"; font-size: 9px; }
+.cart-link b { min-width: 17px; height: 17px; display: grid; place-items: center; border-radius: 50%; background: var(--red); font-family: "Open Sans"; font-size: 9px; }
 
 .button {
   min-height: 44px;
@@ -195,7 +195,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   border: 0;
   border-radius: 999px;
   padding: 12px 21px;
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.055em;
@@ -231,7 +231,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   gap: 12px;
   margin: 0 0 18px;
   color: rgba(255, 255, 255, 0.76);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.14em;
@@ -242,7 +242,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .eyebrow b { font: inherit; }
 .eyebrow--dark { color: var(--muted-dark); }
 h1, h2, h3, p { text-wrap: pretty; }
-h1, h2, h3 { font-family: "Archivo", sans-serif; }
+h1, h2, h3 { font-family: "Open Sans", Arial, sans-serif; }
 
 .page-view[hidden] { display: none !important; }
 
@@ -289,12 +289,12 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   border: 1px solid var(--line-light);
   background: rgba(255,255,255,.04);
   color: rgba(255,255,255,.56);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 9px;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
-.hero-proof b { font-family: "Archivo", sans-serif; font-size: 19px; letter-spacing: -.02em; color: var(--white); }
+.hero-proof b { font-family: "Open Sans", Arial, sans-serif; font-size: 19px; letter-spacing: -.02em; color: var(--white); }
 
 .category-products { padding-top: 76px; }
 .category-products__head {
@@ -319,7 +319,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   padding: 10px 16px;
   background: transparent;
   color: var(--muted-dark);
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 11.5px;
   font-weight: 700;
   letter-spacing: .05em;
@@ -327,7 +327,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   cursor: pointer;
   transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
 }
-.filter-chip b { min-width: 18px; height: 18px; display: grid; place-items: center; border-radius: 50%; background: rgba(0,0,0,.09); font-family: "IBM Plex Mono"; font-size: 9px; }
+.filter-chip b { min-width: 18px; height: 18px; display: grid; place-items: center; border-radius: 50%; background: rgba(0,0,0,.09); font-family: "Open Sans"; font-size: 9px; }
 .filter-chip:hover { border-color: rgba(0,0,0,.4); color: var(--black); }
 .filter-chip.is-active { background: var(--ink); border-color: var(--ink); color: var(--white); }
 .filter-chip.is-active b { background: var(--red); color: var(--white); }
@@ -338,7 +338,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .group-block[hidden] { display: none; }
 .group-head { display: grid; grid-template-columns: 1fr 1.15fr; gap: 40px; align-items: baseline; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--line-dark); }
 .group-head h3 { margin: 0; font-size: 25px; line-height: 1.05; letter-spacing: -.02em; text-transform: uppercase; }
-.group-head h3 em { margin-left: 8px; color: var(--signal); font-family: "IBM Plex Mono", monospace; font-size: 11px; font-style: normal; vertical-align: middle; }
+.group-head h3 em { margin-left: 8px; color: var(--signal); font-family: "Open Sans", Arial, sans-serif; font-size: 11px; font-style: normal; vertical-align: middle; }
 .group-head p { margin: 0; max-width: 60ch; color: var(--muted-dark); font-size: 13px; line-height: 1.6; }
 .group-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 
@@ -352,20 +352,20 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .tape-card:hover { transform: translateY(-5px); border-color: rgba(0,0,0,.3); box-shadow: 0 18px 42px rgba(0,0,0,.1); }
 .tape-card__media { position: relative; display: grid; place-items: center; height: 210px; overflow: hidden; background: radial-gradient(circle at 50% 42%, #26292c, #08090a 72%); }
 .tape-card__media img { position: absolute; z-index: 3; inset: 0; width: 100%; height: 100%; padding: 26px; object-fit: contain; filter: drop-shadow(0 18px 18px rgba(0,0,0,.55)); }
-.product-badge { position: absolute; z-index: 4; top: 14px; left: 14px; padding: 7px 9px; border: 1px solid rgba(255,255,255,.22); background: rgba(0,0,0,.58); color: rgba(255,255,255,.8); font-family: "IBM Plex Mono"; font-size: 8px; letter-spacing: .1em; text-transform: uppercase; }
+.product-badge { position: absolute; z-index: 4; top: 14px; left: 14px; padding: 7px 9px; border: 1px solid rgba(255,255,255,.22); background: rgba(0,0,0,.58); color: rgba(255,255,255,.8); font-family: "Open Sans"; font-size: 8px; letter-spacing: .1em; text-transform: uppercase; }
 .tape-card__copy { display: flex; flex: 1; flex-direction: column; padding: 22px; }
 .tape-card__copy .mono { margin: 0 0 11px; color: var(--signal); }
 .tape-card__copy h3 { margin: 0; font-size: 20px; line-height: 1.06; text-transform: uppercase; }
 .tape-card__copy > p:not(.mono) { margin: 11px 0 16px; color: var(--muted-dark); font-size: 12.5px; line-height: 1.55; }
 .tape-card__footer { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; margin-top: auto; padding-top: 15px; border-top: 1px solid var(--line-dark); }
-.tape-card__footer strong { font-family: "Archivo"; font-size: 13.5px; text-transform: uppercase; }
+.tape-card__footer strong { font-family: "Open Sans"; font-size: 13.5px; text-transform: uppercase; }
 .tape-card__footer strong small { color: var(--muted-dark); font-size: 9px; }
 .tape-card__footer > span { white-space: nowrap; color: var(--red); font-size: 11.5px; font-weight: 800; }
 .tape-card__footer b { margin-left: 4px; font-size: 14px; }
 
 .mini-swatches { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-bottom: 16px; }
 .mini-swatches i { width: 13px; height: 13px; border: 1px solid rgba(0,0,0,.22); border-radius: 3px; }
-.mini-swatches em { color: var(--muted-dark); font-family: "IBM Plex Mono", monospace; font-size: 9px; font-style: normal; }
+.mini-swatches em { color: var(--muted-dark); font-family: "Open Sans", Arial, sans-serif; font-size: 9px; font-style: normal; }
 
 
 .product-hero {
@@ -496,7 +496,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   border: 1px solid rgba(255,255,255,.22);
   background: rgba(0,0,0,.5);
   color: rgba(255,255,255,.72);
-  font-family: "IBM Plex Mono";
+  font-family: "Open Sans";
   font-size: 9px;
   letter-spacing: .11em;
   text-transform: uppercase;
@@ -529,14 +529,14 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   border: 1px solid var(--line-light);
   background: rgba(255,255,255,.04);
   color: rgba(255,255,255,.52);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 8.5px;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
 .spec-strip b {
   order: -1;
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 1.15;
   letter-spacing: -.01em;
@@ -577,7 +577,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   border-radius: 999px;
   background: transparent;
   color: rgba(255,255,255,.82);
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .04em;
@@ -591,8 +591,8 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .secondary-actions .text-link { color: rgba(255,255,255,.72); font-size: 12.5px; }
 
 .price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 17px; }
-.price > span { margin-right: auto; color: rgba(255,255,255,.52); font-family: "IBM Plex Mono"; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
-.price strong { font-family: "Archivo"; font-size: 30px; letter-spacing: -.03em; }
+.price > span { margin-right: auto; color: rgba(255,255,255,.52); font-family: "Open Sans"; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.price strong { font-family: "Open Sans"; font-size: 30px; letter-spacing: -.03em; }
 .price small { color: rgba(255,255,255,.58); font-size: 11px; }
 .purchase-controls { display: grid; grid-template-columns: 130px 1fr; gap: 12px; }
 .quantity { min-height: 56px; display: grid; grid-template-columns: 40px 1fr 40px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; overflow: hidden; }
@@ -641,7 +641,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   border-radius: 50%;
   background: var(--red);
   color: #fff;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 9.5px;
   letter-spacing: 0;
 }
@@ -674,7 +674,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .project-card:hover { transform: translateY(-5px); border-color: rgba(255,255,255,.38); }
 .project-card__media { position: relative; height: 315px; overflow: hidden; background: #050607; }
 .project-card__media img { width: 100%; height: 100%; object-fit: cover; }
-.project-card__media span { position: absolute; right: 16px; bottom: 16px; padding: 8px 10px; background: var(--red); color: #fff; font-family: "IBM Plex Mono"; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.project-card__media span { position: absolute; right: 16px; bottom: 16px; padding: 8px 10px; background: var(--red); color: #fff; font-family: "Open Sans"; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 .project-card__copy { padding: 24px; }
 .project-card__copy .mono { margin: 0 0 14px; color: rgba(255,255,255,.72); }
 .project-card__copy h3 { max-width: 430px; margin: 0 0 20px; font-size: 23px; line-height: 1.08; text-transform: uppercase; }
@@ -729,7 +729,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   border-bottom: 1px solid rgba(255,255,255,.28);
   background: #17191b;
   color: rgba(255,255,255,.72);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: .12em;
@@ -745,7 +745,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   min-width: 210px;
   background: #0d0e0f;
   box-shadow: 1px 0 0 rgba(255,255,255,.12);
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.15;
@@ -772,7 +772,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 
 .compare-table td { color: rgba(255,255,255,.84); }
 .compare-table td.num {
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   color: var(--white);
@@ -798,7 +798,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   display: none;
   margin: 10px 0 0;
   color: rgba(255,255,255,.5);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -833,7 +833,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   line-height: 1.5;
 }
 .spec-row strong {
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14.5px;
   font-weight: 700;
   line-height: 1.35;
@@ -874,7 +874,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   gap: 24px;
   padding: 20px 0;
   cursor: pointer;
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: 800;
   letter-spacing: -.01em;
@@ -883,7 +883,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .faq-item summary::-webkit-details-marker { display: none; }
 .faq-item summary::after { content: "+"; color: var(--signal); font-size: 24px; font-weight: 400; line-height: 1; }
 .faq-item[open] summary::after { content: "\2212"; }
-.faq-item summary:hover { color: var(--red); }
+.faq-item summary:hover { color: inherit; }
 .faq-item[open] > summary { color: var(--red); }
 .faq-item[open] > summary::after { color: var(--red); }
 .faq-item p { max-width: 82ch; margin: 0 0 22px; color: var(--muted-dark); font-size: 14px; line-height: 1.65; }
@@ -910,7 +910,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .footer-grid strong { color: var(--white); margin-bottom: 10px; }
 .footer-grid a:not(.brand) { color: rgba(255,255,255,.76); font-size: 12px; }
 .footer-grid a:hover { color: var(--white); }
-.footer-bottom { display: flex; justify-content: space-between; border-top: 1px solid var(--line-light); margin-top: 52px; padding-top: 18px; color: rgba(255,255,255,.44); font-family: "IBM Plex Mono"; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+.footer-bottom { display: flex; justify-content: space-between; border-top: 1px solid var(--line-light); margin-top: 52px; padding-top: 18px; color: rgba(255,255,255,.44); font-family: "Open Sans"; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
 
 .sticky-cta {
   position: fixed;
@@ -931,7 +931,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 }
 .sticky-cta.is-visible { visibility: visible; opacity: 1; transform: translateY(0); pointer-events: auto; transition-delay: 0s; }
 .sticky-cta__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.sticky-cta__prompt { font-family: "Archivo"; font-size: 14px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase; }
+.sticky-cta__prompt { font-family: "Open Sans"; font-size: 14px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase; }
 .sticky-cta__actions { display: flex; align-items: center; gap: 10px; }
 .sticky-cta .button { min-height: 48px; white-space: nowrap; }
 
@@ -1130,7 +1130,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   border-radius: 4px;
   background: var(--white);
   color: #1a1a1a;
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 800;
   letter-spacing: -.02em;
@@ -1306,7 +1306,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .hero-video__frame img { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.75) contrast(1.08); transition: transform 500ms ease, filter 300ms ease; }
 .hero-video__shade { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,.05), rgba(0,0,0,.54)); }
 .hero-video__play { position: absolute; top: 50%; left: 50%; display: grid; width: 68px; height: 68px; place-items: center; border: 1px solid rgba(255,255,255,.82); border-radius: 50%; color: var(--white); font-size: 18px; line-height: 1; transform: translate(-50%, -50%); transition: background 180ms ease, color 180ms ease, transform 180ms ease; }
-.hero-video__index { position: absolute; top: 18px; left: 18px; color: var(--white); font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+.hero-video__index { position: absolute; top: 18px; left: 18px; color: var(--white); font-family: "Open Sans", Arial, sans-serif; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
 .hero-video__frame:hover img { transform: scale(1.035); filter: saturate(.92) contrast(1.04); }
 .hero-video__frame:hover .hero-video__play, .hero-video__frame:focus-visible .hero-video__play { background: var(--white); color: var(--black); transform: translate(-50%, -50%) scale(1.06); }
 .hero-video__frame:focus-visible { outline: 2px solid var(--white); outline-offset: 6px; }
@@ -1355,7 +1355,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
   border-top: 3px solid var(--red);
 }
 .cap-points b {
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15.5px;
   line-height: 1.2;
   letter-spacing: -.01em;
@@ -1383,7 +1383,7 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .article-card__copy .mono { margin: 0; color: var(--signal); }
 .article-card__copy h3 {
   margin: 0;
-  font-family: "Archivo", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 1.2;
   letter-spacing: -.015em;
@@ -1414,7 +1414,8 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .features-wrap .applications strong, .features-wrap .applications li::before { color:var(--red); }
 .limitations ul { display:block; }
 .limitations li + li { margin-top:8px; }
-.faq-item summary, .faq-item[open] summary { color:var(--red); }
+.faq-item summary { color:inherit; }
+.faq-item[open] > summary { color:var(--red); }
 .video-card__media { aspect-ratio:16/9; }
 .video-card__media img { width:100%; height:100%; object-fit:contain; }
 
