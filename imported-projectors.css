@@ -1286,7 +1286,8 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 .features-wrap .applications strong, .features-wrap .applications li::before { color:var(--red); }
 .limitations ul { display:block; }
 .limitations li + li { margin-top:8px; }
-.faq-item summary, .faq-item[open] summary { color:var(--red); }
+.faq-item summary { color:var(--ink); }
+.faq-item[open] summary { color:var(--red); }
 .video-card__media { aspect-ratio:16/9; }
 .video-card__media img { width:100%; height:100%; object-fit:contain; }
 

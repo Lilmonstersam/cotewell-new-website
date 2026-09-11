@@ -686,6 +686,8 @@ p { max-width: none; }
 .home-cases .case-study-tabs img { width: 100px; height: 36px; object-fit: contain; background: #fff; padding: 5px; }
 .home-cases .case-study-tabs img.logo--dark { background: #000; }
 body[data-page="home"] [data-site-footer] > .cta-band { display: none; }
+/* Client feedback (Sep 2026): the line marking page ends on its own quote block. */
+body[data-page="line"] [data-site-footer] > .cta-band { display: none; }
 .footer-col h3 { font-size: 16px; }
 .footer-services a { font-family: "Big John", sans-serif; font-size: 14px; }
 @media (max-width: 1200px) {
