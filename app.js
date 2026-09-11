@@ -55,11 +55,16 @@
   }
 
   if (footerMount) {
-    footerMount.innerHTML = [
+    var showCtaBand = (page !== 'quote' && page !== 'home' && page !== 'line');
+    var ctaBandHtml = showCtaBand ? [
       '<section class="cta-band"><div class="shell cta-band__inner">',
         '<h2>Tell us what your floor needs to do.</h2>',
         '<a class="btn btn--dark btn--large" href="quote.html">Request a Quote <span aria-hidden="true">↗</span></a>',
-      '</div></section>',
+      '</div></section>'
+    ].join('') : '';
+
+    footerMount.innerHTML = [
+      ctaBandHtml,
       '<footer class="site-footer">',
         '<nav class="footer-services" aria-label="Services"><div class="shell footer-services__inner">',
           '<a href="floor-coating.html">Floor Coating</a>',
