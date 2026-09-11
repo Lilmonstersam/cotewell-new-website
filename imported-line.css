@@ -1267,9 +1267,11 @@ h1, h2, h3 { font-family: "Archivo", sans-serif; }
 }
 
 
-/* Client feedback (Sep 2026): expanded CAP explainer, kept to a readable measure. */
-#cold-applied-plastic .shell > p { max-width: 74ch; margin: 0 0 20px; font-size: 17px; line-height: 1.62; }
-#cold-applied-plastic .shell > p + p { margin-top: 0; }
+/* Client feedback (Sep 2026): expanded CAP explainer in 2 columns. */
+#cold-applied-plastic .section-head { display: block; margin-bottom: 24px; }
+#cold-applied-plastic .cap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); margin-bottom: 28px; }
+#cold-applied-plastic .cap-grid p { margin: 0; font-size: 17px; line-height: 1.62; }
 #cold-applied-plastic .button { margin-top: 14px; }
-
+@media (max-width: 768px) {
+  #cold-applied-plastic .cap-grid { grid-template-columns: 1fr; gap: 16px; }
 }
